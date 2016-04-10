@@ -2,5 +2,6 @@
 
 FactoryGirl.define do
   factory :task do
+    title 'Write blogpost'
   end
 end

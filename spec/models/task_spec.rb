@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Task do
+RSpec.describe Task, type: :model do
   it 'always has a title' do
-    task = Task.new
-    expect(task.title).to eq('')
+    task = build(:task)
+    expect(task.title).to eq('Write blogpost')
   end
 end
